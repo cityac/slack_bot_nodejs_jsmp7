@@ -5,7 +5,7 @@ const  dotenv = require('dotenv');
 dotenv.load({ path: '.env' || ""});
 
 const slackClient = require('./slackClient');
-let witClient = require('./witClient');
+var witClient = require('./witClient');
 witClient = witClient.init(process.env.WIT_TOKEN);
 slackClient.init();
 
